@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo span {
+    color: red;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right button {
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+    background: #000;
+    color: #fff;
+    padding: 60px 40px;
+    border-bottom-right-radius: 50px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero span {
+    color: orange;
+}
+
+/* TITLE */
+.title-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.tag {
+    background: #ffe5cc;
+    color: orange;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.filters {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.filters span {
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+.filters .active {
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+/* PRODUCTS GRID */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+    padding: 40px 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* TITLE */
+.card h3 {
+    color: #ff7a00;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+/* SUBTEXT */
+.card p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* DETAILS */
+.details {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* BUTTON AREA */
+.card-btns {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BUTTON */
+.view {
+    background: #ff7a00;
+    border: none;
+    padding: 8px 14px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* CHECKBOX TEXT */
+.card-btns label {
+    font-size: 12px;
+    color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FOOTER */
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 60px 40px 20px;
+    position: relative;
+}
+
+/* BIG BACKGROUND TEXT */
+.big-text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 120px;
+    letter-spacing: 20px;
+    color: rgba(255,255,255,0.05);
+    font-weight: bold;
+}
+
+/* CONTAINER */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+/* COLUMN */
+.footer-col {
+    width: 18%;
+    min-width: 180px;
+}
+
+/* LOGO */
+.footer-col h3 span {
+    color: red;
+}
+
+/* TEXT */
+.footer-col p {
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* LIST */
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+/* SOCIAL */
+.social span {
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* COPYRIGHT */
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .machine {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .big-text {
+        font-size: 60px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+}
