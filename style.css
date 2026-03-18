@@ -1,0 +1,455 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: #ffffff;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  background: black;
+  color: white;
+  padding: 6px 12px;
+  letter-spacing: 1px;
+}
+
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: orange;
+}
+
+.enquiry {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  background: #000;
+  color: white;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: orange;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff8c00;
+}
+
+.hero img {
+  width: 499px;
+  height:499px;
+  filter: drop-shadow(0px 10px 30px rgba(255,255,255,0.2));
+}
+
+/* About Section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 60px;
+  background: white;
+}
+
+.about-left {
+  width: 45%;
+}
+
+.about-left h2 {
+  margin-bottom: 15px;
+}
+
+#about-me-btn {
+background: #FFEDD7;
+color: orange;
+width: 116;
+height: 32;
+opacity: 1;
+top: 68px;
+left: 73px;
+gap: 3px;
+padding-top: 4px;
+padding-right: 16px;
+padding-bottom: 4px;
+padding-left: 16px;
+border-radius: 20px;
+margin-bottom: 20px;
+}
+
+
+.about-left p {
+  color: #666;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 25px;
+}
+
+.stats {
+  font-size: 46px;
+  font-weight: bold;
+  color: orange;
+}
+
+.stats-text p{
+  font-size:15px;
+  font-weight:normal;
+}
+
+.about-right {
+  width: 45%;
+  font-size: 16px;
+  text-align:left;
+  font-weight: 400;
+  line-height: 22px;
+  color: #555;
+  letter-spacing: 0%;
+}
+
+/* Product Section */
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 60px;
+}
+
+.product-text {
+  width: 45%;
+}
+
+.product-text h2 {
+  margin-bottom: 15px;
+}
+
+.product-text p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.product-img {
+width: 500;
+height: 500;
+opacity: 1;
+top: -51px;
+}
+
+
+/* Contact Me Section */
+
+.contact-section {
+  text-align: center;
+  padding: 80px 40px;
+  background: #f5f5f5;
+}
+
+/* Tag */
+.tag {
+  display: inline-block;
+  background: #ffe5cc;
+  color: #ff8c00;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Container */
+.contact-container {
+  display: flex;
+  justify-content:center;
+  gap: 30px;
+  background: url('./Contact\ bg.jpg') no-repeat center/cover;
+  width: 1296px;
+  height:400px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.Container-first {
+text-align: center;
+}
+
+
+
+/* Card */
+.contact-card {
+width: 382;
+height: 282;
+opacity: 1;
+top: 70px;
+left: 844px;
+gap: 17px;
+border-radius: 28px;
+padding: 18px;
+border-width: 1px;
+color: #252525CC;
+backdrop-filter: blur(10px);
+background: rgba(0,0,0,0.5);
+color: white;
+border: 1px solid gray;
+transition: 0.3s;
+margin:auto;
+}
+
+/* Hover Effect */
+.contact-card:hover {
+  transform: translateY(-10px);
+  border-color: orange;
+}
+
+/* Icon */
+.icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+  background: orange;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Text */
+.contact-card h3 {
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.contact-card button {
+  background: orange;
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-card button:hover {
+  background: #ff8c00;
+}
+
+/* Banner Section */
+.banner {
+  position: relative;
+  background: linear-gradient(to right, #d97706, #f59e0b);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  overflow: hidden;
+}
+
+/* Text */
+.banner-content h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Image */
+.banner-img {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  width: 500px;
+}
+
+/* Vertical Text */
+.vertical-text {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  color: #ffffff;
+}
+
+/* Footer */
+.footer {
+  background: #111;
+  color: #ccc;
+  padding: 50px 60px 20px;
+}
+
+/* Layout */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Columns */
+.footer-col {
+  flex: 1;
+  min-width: 180px;
+}
+
+/* Logo */
+.logo {
+  background: black;
+  color: white;
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Headings */
+.footer-col h4 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Links */
+.footer-col a {
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+  margin-bottom: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  color: orange;
+}
+
+/* Text */
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Social */
+.social span {
+  margin-right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Divider */
+.footer hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 30px 0;
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hero,
+  .about,
+  .product {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .about-left,
+  .about-right,
+  .product-text {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hero img,
+  .product img {
+    margin-top: 30px;
+    width: 300px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  banner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .banner-img {
+    position: static;
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  .vertical-text {
+    display: none;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
