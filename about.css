@@ -97,6 +97,7 @@ nav ul {
   background: #eee;
 }
 
+
 /* Show on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -143,7 +144,20 @@ nav ul {
   color: orange;
 }
 
+.about-banner {
+  animation: fadeIn 1.5s ease-in-out;
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* About Section */
 .about-section {
   padding: 80px 60px;

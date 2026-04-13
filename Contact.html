@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Excavator Landing Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+.contact-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000709, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Glass container */
+.contact-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* Heading */
+.contact-container h2 {
+  color: #fffcfc;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Floating input style */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 14px;
+}
+
+.input-group label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #aaa;
+  font-size: 14px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+/* Floating effect */
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  color: orange;
+}
+
+/* Button */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, orange, #ff5e00);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255,94,0,0.6);
+}
+
+/* Tablet view */
+@media (max-width: 992px) {
+  .contact-container {
+    padding: 30px;
+    max-width: 400px;
+  }
+
+  .contact-container h2 {
+    font-size: 24px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 20px;
+  }
+
+  .contact-container {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .contact-container h2 {
+    font-size: 22px;
+  }
+
+  .contact-container p {
+    font-size: 14px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .contact-form button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+.contact-container {
+  width: 100%;
+}
+}
+</style>
+
+</head>
+
+<body>
+<section class="contact-section">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you</p>
+
+    <form class="contact-form">
+      <div class="input-group">
+        <input type="text" required>
+        <label>Your Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" required>
+        <label>Your Email</label>
+      </div>
+
+      <div class="input-group">
+        <textarea required></textarea>
+        <label>Your Message</label>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+</body>
+
+</html>
