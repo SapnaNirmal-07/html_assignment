@@ -14,9 +14,19 @@
     background: #fff;
 }
 
+a {
+  text-decoration:none;
+  color:inherit;
+}
+
 .logo {
     font-weight: bold;
     font-size: 20px;
+    margin-top: 10px;
+}
+
+.nav-middle {
+  font-size: 18px;
 }
 
 .logo span {
@@ -25,7 +35,7 @@
 
 nav ul {
     display: flex;
-    gap: 25px;
+    gap: 45px;
     list-style: none;
 }
 
@@ -43,19 +53,69 @@ nav ul {
     border-radius: 5px;
 }
 
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background: #ffffff;
+  width: 220px;
+
+  list-style: none;
+  padding-top: 10px;
+  margin:0;
+
+  display: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Dropdown Items */
+.dropdown-menu li {
+  border-bottom: 1px solid #cfcdcd;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+}
+
+.dropdown-menu li a:hover {
+  background: #eee;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 /* HERO */
 .hero {
     background: #000;
+    height:300px;
+    display:flex;
+    align-items: center;
     color: #fff;
     padding: 60px 40px;
-    border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 60px;
 }
 
-.hero h1 {
+.hero-text h1 {
     font-size: 40px;
 }
 
-.hero span {
+.hero-text p{
+margin-top: 10px;
+font-size: 20px;
+}
+
+.hero-text span {
     color: orange;
 }
 

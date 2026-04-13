@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Excavator Landing Page</title>
 <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 </head>
 <body>
@@ -14,24 +15,61 @@
     <div class="logo">ENGIRI<span>SE</span></div>
 
     <nav>
-        <ul>
-            <li><a href="./product.html">Product ▾</a></li>
-            <li>Company Overview ▾</li>
-            <li><a href="./About.html">About Us ▾</a></li>
-            <li>Dealer ▾</li>
-        </ul>
+      <ul class="nav-middle">
+        <li class="dropdown"><a href="#">Product ▾</a>
+          <ul class="dropdown-menu">
+             <li><a href="#">Excavators</a></li>
+             <li><a href="#">Loaders</a></li>
+             <li><a href="#">Forklifts</a></li>
+             <li><a href="#">Road Machinery</a></li>
+             <li><a href="#">MEWPs</a></li>
+             <li><a href="#">Agriculture</a></li>
+             <li><a href="#">Warehouse Equipment</a></li>
+             <li><a href="#">Concrete Machinery</a></li>
+            <li><a href="#">Cranes</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown"><a href="#">Company Overview ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Contac Us</a></li>
+          </ul>
+        </li>
+
+        <li><a href="./About.html">About Us</a></li>
+
+        <li class="dropdown"><a>Dealer ▾</a>
+          <ul class="dropdown-menu">
+           <li><a href="#">Find a Dealer</a></li>
+           <li><a href="#">Become a Dealer</a></li>
+          </ul> 
+        </li>
+      </ul>
     </nav>
 
     <div class="nav-right">
-        <span>🌐</span>
-        <span>🔍</span>
+        <span class="dropdown">🌐
+          <ul class="dropdown-menu">
+            <li><a href="#">Global</a></li>
+            <li><a href="#">India</a></li>
+            <li><a href="#">Africa</a></li>
+          </ul>
+        </span>
+        
+        <span class="search-icon">🔍</span>
+
         <button>Enquiry</button>
     </div>
+
+
+  
 </header>
+
 
 <section class="hero">
   <div class="hero-text">
-    <h1>Versatile power for every task</h1>
+    <h1>Versatile power<br>for every task</h1>
     <p>A crawler excavator is a heavy-duty machine built on robust tracks, designed for a crawler excavator is a heavy-duty.</p>
     <button class="btn">Contact Us</button>
   </div>
@@ -66,7 +104,7 @@ A crawler excavator is a heavy-duty machine built on robust tracks, designed for
     <button id="about-me-btn" class="btn">● Product</button>
     <h2>Excavator</h2>
     <p>A crawler excavator is a heavy-duty machine built on robust tracks, designed for powerful digging, lifting, and earthmoving across rough or uneven terrain. Its stability and traction make it ideal for construction, mining, and infrastructure projects, and it is available in two types: electric crawler excavator and diesel crawler excavator.</p>
-    <button class="btn">Explore Excavator</button>
+    <button class="btn"><a href="./product.html">Explore Excavator</a></button>
   </div>
   <img src="./Image1.png" class="product-img" alt="forklift">
 </section>
@@ -79,7 +117,7 @@ A crawler excavator is a heavy-duty machine built on robust tracks, designed for
 
     <h2>Get In Touch</h2>
     
-  <div class="contact-container">
+  <div id="contact-container-div" class="contact-container">
 
     <!-- Card 1 -->
     <div class="contact-card">
@@ -104,7 +142,8 @@ A crawler excavator is a heavy-duty machine built on robust tracks, designed for
       <p>Discover our innovative solutions for the world’s fastest growing.</p>
       <button>Learn More →</button>
     </div>
-  </div>
+   </div>
+  
 </section>
 
 <!-- Banner Section -->
@@ -115,28 +154,30 @@ A crawler excavator is a heavy-duty machine built on robust tracks, designed for
 
   <img src="./Global.png" alt="loader" class="banner-img">
 
-  <div class="vertical-text">ENGIRISE</div>
 </section>
 
 
 <!-- Footer Section -->
+
 <footer class="footer">
 
-  <div class="footer-container">
+    <div class="big-text">ENGIRISE</div>
 
-    <!-- Left -->
-    <div class="footer-col">
-      <div class="logo">ENGIRISE</div>
-      <p>
-        Engirise India manufactures next-gen, eco-conscious heavy machinery 
-        adapted to Indian industrial projects.
-      </p>
-    </div>
+    <div class="footer-container">
 
-    <!-- Machinery -->
+        <!-- ABOUT -->
+        <div class="footer-col">
+            <h3>ENGIRI<span>SE</span></h3>
+            <p>
+                Engirise India manufactures next-gen, eco-conscious heavy machinery
+                adapted to Indian industrial projects.
+            </p>
+        </div>
+
+        <!-- Machinery -->
     <div class="footer-col">
       <h4>Machinery</h4>
-      <a href="#">Products</a>
+      <a href="./product.html">Products</a>
       <a href="#">Service</a>
       <a href="#">Part</a>
     </div>
@@ -155,29 +196,30 @@ A crawler excavator is a heavy-duty machine built on robust tracks, designed for
       <a href="#">Privacy policy</a>
     </div>
 
-    <!-- Address -->
-    <div class="footer-col">
-      <h4>India Address</h4>
-      <p>📍 2068, U-Wing, Akshar Business Park,<br>
-      Sector-25, Vashi, Navi Mumbai-400705</p>
+        <!-- ADDRESS -->
+        <div class="footer-col">
+            <p>
+                📍 2068, U-Wing, Akshar Business Park,<br>
+                Sector-25, Vashi, Navi Mumbai-400705
+            </p>
 
-      <div class="social">
-        <span>🌐</span>
-        <span>📷</span>
-        <span>💼</span>
-        <span>🎵</span>
-      </div>
+            <div class="social">
+                <span>📘</span>
+                <span>📷</span>
+                <span>💼</span>
+                <span>🎵</span>
+            </div>
+        </div>
+
     </div>
 
-  </div>
+    <p class="copyright">
+        Copyright © 2025 Engirise Private Ltd.
+    </p>
 
-  <hr>
+    </footer>
 
-  <p class="copyright">
-    Copyright © 2025 Engirise Private Ltd.
-  </p>
-
-</footer>
+<script src="./index.js"></script>
 
 </body>
 </html>
